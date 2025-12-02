@@ -21,7 +21,7 @@ The workflow includes:
 
 ---
 
-## 📂 What This Repository Contains
+## What This Repository Contains
 
 The scripts and notebooks included in this repository allow you to run the full pipeline:
 
@@ -41,12 +41,12 @@ Evaluates model performance with and without retrieved context.
 
 ---
 
-## 📦 Code Location
+## Code Location
 All code files referenced above are available directly in this repository and organized by module.
 
 ---
 
-## 📘 Case-Study Dataset (Appendicitis)
+## Case-Study Dataset (Appendicitis)
 
 You may download the dataset used in the case study from PhysioNet:
 
