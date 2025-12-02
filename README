@@ -1,5 +1,5 @@
-# **Leveraging Retrieval-Augmented Language Models for Early Diagnosis in Resource-Constrained Healthcare**
-### *(RAG + RAE Framework for Data Augmentation and Clinical Diagnosis)*
+ **Leveraging Retrieval-Augmented Language Models for Early Diagnosis in Resource-Constrained Healthcare**
+ *(RAG + RAE Framework for Data Augmentation and Clinical Diagnosis)*
 
 This repository provides a complete, reproducible pipeline for **retrieval-augmented data generation (RAG)** and **retrieval-aware evaluation (RAE)** to support early diagnosis when only **small datasets** are available.
 
