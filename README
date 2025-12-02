@@ -1,21 +1,61 @@
-Leveraging Retrieval-Augmented Language Models for Early Diagnosis in Resource-Constrained Healthcare
-(RAG + RAE Framework for Data Augmentation and Clinical Diagnosis)
+# **Leveraging Retrieval-Augmented Language Models for Early Diagnosis in Resource-Constrained Healthcare**
+### *(RAG + RAE Framework for Data Augmentation and Clinical Diagnosis)*
 
-This repository provides a complete, reproducible pipeline for retrieval-augmented data generation (RAG) and retrieval-aware evaluation (RAE) to support early diagnosis when only small datasets are available.
+This repository provides a complete, reproducible pipeline for **retrieval-augmented data generation (RAG)** and **retrieval-aware evaluation (RAE)** to support early diagnosis when only **small datasets** are available.
+
+---
+
+## --> Pipeline Overview
+
 The workflow includes:
 
-1) RAG-based data augmentation (LLM-only and LLM+RAG variants)
-2) Diagnostic modeling with RAE, using original and augmented datasets
-3) Evaluation of performance with and without fine-tuning
+1. **RAG-based data augmentation**
+   - LLM-only paraphrasing
+   - LLM + RAG contextual augmentation
 
-What This Repository Contains?
-The main script (or notebook) included in this repo allow you to run the full pipeline:
-1. RAG-Based Augmentation (This module generates additional synthetic clinical samples based on your small dataset using:
-1.1 LLM-Based Augmentation
-1.2 LLM + RAG Augmentation (retrieves context-relevant samples before generation)
-1.3 Diagnosis with RAE (Retrieval-Aware Evaluation)
-The file that contains the related code can ba found here: 
+2. **Diagnostic modeling with RAE**
+   - Using original and augmented datasets
 
-From where to download the case-study dataset (appendicitis)?
- * Download Dataset Here: https://physionet.org/content/mimic-iv-ext-cdm/1.1/
- * Used features: HPI (History of Present Illness), PE (Physical Examination), Diagnostic csv files 
+3. **Performance evaluation**
+   - With and without fine-tuning
+
+---
+
+## 📂 What This Repository Contains
+
+The scripts and notebooks included in this repository allow you to run the full pipeline:
+
+### **1. RAG-Based Augmentation**
+Generates additional synthetic clinical samples from a small dataset using:
+
+- **1.1 LLM-Based Augmentation**  
+  *Notebook:* `BIOLLMSub+Obj.ipynb`
+
+- **1.2 LLM + RAG Augmentation**  
+  Retrieves context-relevant samples prior to generation.  
+  *Notebook:* `BIOLLMSub+Obj.ipynb`
+
+### **2. Diagnosis with RAE (Retrieval-Aware Evaluation)**
+Evaluates model performance with and without retrieved context.  
+*Notebook:* `few_shot_withRAG.ipynb`
+
+---
+
+## 📦 Code Location
+All code files referenced above are available directly in this repository and organized by module.
+
+---
+
+## 📘 Case-Study Dataset (Appendicitis)
+
+You may download the dataset used in the case study from PhysioNet:
+
+🔗 **Download Dataset:**  
+https://physionet.org/content/mimic-iv-ext-cdm/1.1/
+
+**Used features:**
+- HPI — *History of Present Illness*
+- PE — *Physical Examination*
+- Diagnostic CSV files
+
+---
